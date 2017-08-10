@@ -63,27 +63,6 @@ public class HomeController
         return "results";
     }
 
-//    @PostMapping("/search")
-//    public String searchResults(@ModelAttribute("searchdish") Dishes dishes)
-//    {
-//        Iterable<Dishes> listToDisplay;
-//        listToDisplay = potRepo.findAll();
-//
 
-        //        if(!dishes.getName().isEmpty())
-//        {
-//            System.out.println("Here");
-//            listToDisplay = potRepo.findAllByNameLike(dishes.getName());
-//        }
-//        else if(!dishes.getDish().isEmpty())
-//        {
-//
-//        }
-//        else
-//        {
-//            listToDisplay = potRepo.findAll();
-//        }
-//        return "results";
-//    }
 
 }
