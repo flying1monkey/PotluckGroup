@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org" lang="en">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 
 <head>
 
@@ -87,16 +87,15 @@
                 <!--<span th:if="${#fields.hasErrors('sku')}" th:errors="*{sku}">Problem with "sku"</span></p>-->
                 <h3><p>Your dish: <input type="text" th:field="*{dish}"/></p></h3>
                 <!--<span th:if="${#fields.hasErrors('title')}" th:errors="*{title}">Problem with "title"</span></p>-->
-                <p><button type="submit" class="btn btn-default" value="Submit" />Submit</button>
-                    <button type="reset" class="btn btn-default" value="Reset" />Reset</button>
-                </p>
+                <p><button type="submit" class="btn btn-default" value="Submit" >Submit</button>
+                <button type="reset" class="btn btn-default" value="Reset" >Reset</button></p>
             </form>
-            <h2><a href="/welcome">Go back to the start page</a></h2>
-            <p><a href="/adddish"><button type="submit" class="btn btn-default">Add another dish</button></a></p></div>
+            <h3><a href="adddish.html"><button class="btn btn-default" type="sign up">Add another dish</button></a>
+                <a href="search.html"><button class="btn btn-default" type="search">Search</button></a></h3>
     </div>
 </div>
 
-<hr>
+<hr/>
 
 
 <!-- Footer -->

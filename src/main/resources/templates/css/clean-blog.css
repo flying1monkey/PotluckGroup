@@ -160,6 +160,8 @@ hr.small {
   padding: 100px 0 50px;
   color: white;
 }
+
+
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading,
   .intro-header .post-heading,
@@ -214,6 +216,7 @@ hr.small {
 .intro-header .post-heading .meta a {
   color: white;
 }
+
 @media only screen and (min-width: 768px) {
   .intro-header .post-heading h1 {
     font-size: 55px;
@@ -404,4 +407,18 @@ img::-moz-selection {
 }
 body {
   -webkit-tap-highlight-color: #0085A1;
+}
+.blacktext {
+  color: black;
+}
+.redtext {
+  color: red;
+}
+
+.page-heading {
+  height: 541px;
+}
+
+.heightchange {
+  margin-top: -100px;
 }
