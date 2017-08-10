@@ -73,9 +73,10 @@
                 <div class="page-heading">
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 heightchange blacktext">
                         <h1 >You added a dish!</h1>
-                        <p th:text="'Name: ' +${adddish.name}"></p>
-                        <p th:text ="'Dish: ' +${adddish.dish}"/>
-
+                        <div class="confirmtext">
+                        <h2><p th:text="'Name: ' +${adddish.name}"></p></h2>
+                        <h2><p th:text ="'Dish: ' +${adddish.dish}"/></h2>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -85,9 +86,9 @@
 
 <!-- Main Content -->
 <div class="container">
-    <div class="row">
-        <h3><a href="adddish.html"><button class="btn btn-default" type="sign up">Add another dish</button></a>
-            <a href="search.html"><button class="btn btn-default" type="search">Search</button></a></h3>
+    <div class="row" align="center">
+        <h3><a href="adddish"><button class="btn btn-default" type="sign up">Add another dish</button></a>
+            <a href="search"><button class="btn btn-default" type="search">Search</button></a></h3>
     </div>
 </div>
 
