@@ -83,18 +83,21 @@
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <form action="#" th:action="@{/adddish}" th:object="${adddish}" method="post">
-                <p>What's your name? <input type="text" th:field="*{name}"/></p>
+                <h3><p>What's your name? <input type="text" th:field="*{name}"/></p></h3>
                 <!--<span th:if="${#fields.hasErrors('sku')}" th:errors="*{sku}">Problem with "sku"</span></p>-->
-                <p>Your dish: <input type="text" th:field="*{dish}"/></p>
+                <h3><p>Your dish: <input type="text" th:field="*{dish}"/></p></h3>
                 <!--<span th:if="${#fields.hasErrors('title')}" th:errors="*{title}">Problem with "title"</span></p>-->
-                <p><input type="submit" value="Submit" /><input type="reset" value="Reset"/></p>
+                <p><button type="submit" class="btn btn-default" value="Submit" />Submit</button>
+                    <button type="reset" class="btn btn-default" value="Reset" />Reset</button>
+                </p>
             </form>
-            <a href="/welcome">Go back to the start page</a>
-            <p><a href="/adddish">Add another dish</a></p></div>
+            <h2><a href="/welcome">Go back to the start page</a></h2>
+            <p><a href="/adddish"><button type="submit" class="btn btn-default">Add another dish</button></a></p></div>
     </div>
 </div>
 
 <hr>
+
 
 <!-- Footer -->
 <footer>

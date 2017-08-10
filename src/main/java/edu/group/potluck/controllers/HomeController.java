@@ -50,7 +50,7 @@ public class HomeController
     @PostMapping("/search")
     public String searchResults(@ModelAttribute("searchdish") Dishes dishes, Model model)
     {
-        Iterable<Dishes> listToDisplay = potRepo.findAll();;
+        Iterable<Dishes> listToDisplay = potRepo.findAll();
         if(!dishes.getName().isEmpty())
         {
             listToDisplay = potRepo.findAllByNameContains(dishes.getName());
