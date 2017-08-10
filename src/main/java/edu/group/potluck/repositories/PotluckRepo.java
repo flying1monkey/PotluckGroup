@@ -6,7 +6,7 @@ import org.springframework.data.repository.CrudRepository;
 public interface PotluckRepo extends CrudRepository<Dishes,Long>
 {
 
-    Iterable<Dishes> findAllByNameLike(String partialName);
-    Iterable<Dishes> findAllByDishLike(String partialDish);
+    Iterable<Dishes> findAllByNameContains(String partialName);
+    Iterable<Dishes> findAllByDishContains(String partialDish);
 
 }

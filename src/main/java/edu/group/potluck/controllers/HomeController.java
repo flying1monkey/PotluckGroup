@@ -53,11 +53,11 @@ public class HomeController
         Iterable<Dishes> listToDisplay = potRepo.findAll();;
         if(!dishes.getName().isEmpty())
         {
-            listToDisplay = potRepo.findAllByNameLike(dishes.getName());
+            listToDisplay = potRepo.findAllByNameContains(dishes.getName());
         }
         else if(!dishes.getDish().isEmpty())
         {
-            listToDisplay = potRepo.findAllByDishLike(dishes.getDish());
+            listToDisplay = potRepo.findAllByDishContains(dishes.getDish());
         }
         model.addAttribute("listToDisplay", listToDisplay);
         return "results";
