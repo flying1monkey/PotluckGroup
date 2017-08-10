@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+    <title>Add a dish</title>
+</head>
+<body>
+<h1>Enter your name and what dish you're bringing</h1>
+<form action="#" th:action="@{/adddish}" th:object="${adddish}" method="post">
+<p>Your name: <input type="text" th:field="*{name}"/></p>
+        <!--<span th:if="${#fields.hasErrors('sku')}" th:errors="*{sku}">Problem with "sku"</span></p>-->
+<p>Your dish: <input type="text" th:field="*{dish}"/></p>
+        <!--<span th:if="${#fields.hasErrors('title')}" th:errors="*{title}">Problem with "title"</span></p>-->
+
+    <p><input type="submit" value="Submit" /><input type="reset" value="Reset"/></p>
+</form>
+<a href="/welcome">Go back to the start page</a>
+<p><a href="/adddish">Add another dish</a></p>
+</body>
+</html>

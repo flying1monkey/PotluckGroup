@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+    <h1>You added a dish!</h1>
+    <p th:text="'Name: ' +${adddish.name}"></p>
+    <p th:text ="'Dish: ' +${adddish.dish}"/>
+</body>
+</html>

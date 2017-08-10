@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Search</title>
+</head>
+<body>
+<form action="#" th:action="@{/search}" th:object="${searchTerm}" method="post">
+
+<p>Search by chef: <input type="text" th:field="*{name}"/></p>
+<p>Search by dish: <input type="text" th:field="*{dish}"/></p>
+<p>Show everything: </p>
+    <p><input type="submit" value="Submit" /><input type="reset" value="Reset"/></p>
+</form>
+</body>
+</html>

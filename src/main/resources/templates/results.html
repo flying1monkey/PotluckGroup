@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+
+<table border="2">
+    <tr>
+        <th>Name</th>
+        <th>Dish</th>
+    </tr>
+    <tr th:each="item : ${listToDisplay}" >
+        <td th:text="${item.name}"/>
+        <td th:text="${item.dish}"/>
+    </tr>
+</table>
+<p><a href="/adddish">Sign up!</a></p>
+<p><a href="/search">Search</a></p>
+</body>
+</html>
