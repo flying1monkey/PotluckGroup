@@ -1,0 +1,10 @@
+| INPUT        | PROCESSING                                                | OUTPUT                                             |
+| ------------ | --------------------------------------------------------- | -------------------------------------------------- |
+| index        | loading welcome html file                                 | Welcome Page                                       |
+| add          | loading adddish html file                                 | Adddish Page                                       |
+| name         | store in database, add "name" in mySQL                    |                                                    |
+| dishes       | store in database, add"dishes" in mySQL                   |                                                    |
+| submit       | loading confirmation html file                            | Confirmation Page                                  |
+| search       | loading search html file                                  | Search Page                                        |
+| chefs/dishes | search chefs/dishes in database, loading result html file | Result Page, show chefs/dishes user is looking for |
+| showlist     | get information from database, loading result html file   | Result Page, show all list                         |
